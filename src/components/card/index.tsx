@@ -49,8 +49,14 @@ export const Card: FC<dataTypes> = ({
         </div>
 
         <div className={style.callToAction}>
-          Чего сидишь? Порадуй котэ,{" "}
-          <a onClick={() => setActive((prev) => !prev)} href="#">
+          Чего сидишь? Порадуй котэ,
+          <a
+            onClick={(e) => {
+                e.preventDefault();
+              setActive((prev) => !prev);
+            }}
+            href="2"
+          >
             купи
           </a>
           .
