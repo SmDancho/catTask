@@ -1,0 +1,29 @@
+[
+    {   
+        "id": 0,
+        "name": "Нямушка",
+        "type" :"c фуа-гра",
+        "portion" :10,
+        "gift": "мышь в подарок" ,
+        "weight": 0.5,
+        "disabled": false
+    },
+    {
+        "id": 1,
+        "name": "Нямушка",
+        "type" :"с рыбой",
+        "portion" :40,
+        "gift": "2 мыши в подарок" ,
+        "weight": 2,
+        "disabled": false
+    },
+    {
+        "id": 2,
+        "name": "Нямушка",
+        "type" :"c курой",
+        "portion" :100,
+        "gift":" 5 мышей в подарок" ,
+        "weight": 5,
+        "disabled": true
+    }
+]

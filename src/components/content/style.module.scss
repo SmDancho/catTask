@@ -1,0 +1,32 @@
+.content {
+  width: 100%;
+  max-height: 100%;
+  min-height: 100vh;
+  background: url("../../../public/assets/background.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.title {
+  color: #ffffff;
+  text-align: center;
+  font-size: 36px;
+  padding-top: 36px;
+  padding-bottom: 24px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+}
+
+.cards {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 80px;
+}

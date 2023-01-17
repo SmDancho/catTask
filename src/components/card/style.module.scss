@@ -1,0 +1,173 @@
+.wrapper {
+  width: 320px;
+}
+.card {
+  position: relative;
+  width: 320px;
+  height: auto;
+  background: linear-gradient(135deg, transparent 30px, #1698d9 0);
+  position: relative;
+  padding-top: 21px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  &::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+    bottom: 4px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, transparent 30px, #ffffff 0);
+  }
+  &:hover {
+    background: linear-gradient(135deg, transparent 30px, #2ea8e6 0);
+    .weightBlock {
+      background: #2ea8e6;
+    }
+  }
+}
+.cardText,
+.Cardportion {
+  position: relative;
+  z-index: 2;
+  margin-left: 48px;
+}
+
+.upperTitle {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #666666;
+}
+
+.title {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.undertitle {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.Cardportion {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #666666;
+  margin-top: 15px;
+}
+.weightBlock {
+  position: absolute;
+  z-index: 1;
+  bottom: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80px;
+  height: 80px;
+  background: #1698d9;
+  font-family: "Trebuchet MS";
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 42px;
+  border-radius: 50%;
+  transition: 0.3s all ease-in-out;
+}
+.measure {
+  font-size: 22px;
+}
+.imgblock {
+  height: 275px;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  margin-top: 33px;
+  padding-bottom: 3px;
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    margin-left: 4px;
+  }
+}
+
+.callToAction {
+  font-family: "Trebuchet MS";
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+// состояния 
+.disabled {
+  background: linear-gradient(135deg, transparent 30px, #b3b3b3 0);
+  .card {
+    position: relative;
+   
+  }
+
+  &:hover {
+    background: linear-gradient(135deg, transparent 30px, #b3b3b3 0);
+    .weightBlock {
+      background: #b3b3b3;
+    }
+  }
+  .weightBlock {
+    background: #b3b3b3;
+    z-index: 5;
+  }
+  &::before {
+    z-index: 3;
+    content: "";
+    position: absolute;
+
+    left: 4px;
+    right: 4px;
+    top: 4px;
+    bottom: 4px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, transparent 30px, #ffffff 0);
+    opacity: 0.6;
+  }
+}
+
+.active {
+    background: linear-gradient(135deg, transparent 30px, #D91667 0);
+    .card {
+      position: relative;
+     
+    }
+  
+    &:hover {
+      background: linear-gradient(135deg, transparent 30px, #E52E7A 0);
+      .weightBlock {
+        background: #E52E7A;
+      }
+    }
+    .weightBlock {
+      background: #D91667;
+    }
+}
